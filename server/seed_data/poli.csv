@@ -1,0 +1,6 @@
+id,nama_poli,deskripsi,icon,jam_buka,jam_tutup,kuota_harian
+1,"Poli Umum","Pelayanan kesehatan umum untuk semua usia","heart-pulse","08:00:00","15:00:00",40
+2,"Poli Gigi","Pelayanan kesehatan gigi dan mulut","tooth","08:00:00","14:00:00",25
+3,"Poli KIA/KB","Kesehatan Ibu Anak dan Keluarga Berencana","baby","08:00:00","14:00:00",30
+4,"Poli Lansia","Pelayanan kesehatan bagi lanjut usia","users","08:00:00","12:00:00",20
+5,"Poli MTBS","Manajemen Terpadu Balita Sakit","activity","08:00:00","14:00:00",25

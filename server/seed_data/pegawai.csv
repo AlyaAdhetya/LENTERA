@@ -1,0 +1,5 @@
+id,user_id,nip,nama_lengkap,jabatan,unit_kerja,no_hp
+1,1,"198501012010011001","Administrator","Admin Sistem","IT","081234567890"
+2,2,"198702152012012002","dr. Sari Dewi","Dokter Umum","Poli Umum","081234567891"
+3,3,"199003202015011003","drg. Andi Pratama","Dokter Gigi","Poli Gigi","081234567892"
+4,4,"198805102013012004","dr. Ratna Sari","Dokter KIA","Poli KIA/KB","081234567893"

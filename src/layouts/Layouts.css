@@ -1,0 +1,212 @@
+/* ============================================
+   LAYOUTS CSS - Medic 128 Sidebar & Topbar
+   ============================================ */
+
+.sidebar {
+    width: 280px;
+    background-color: var(--surface);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.sidebar-header {
+    padding: 1.75rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.logo-text span {
+    color: var(--primary-dark);
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 1.5rem 0;
+    overflow-y: auto;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 0.25rem;
+    padding: 0 1rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1rem;
+    color: var(--text-muted);
+    border-radius: var(--radius-md);
+    /* Extra rounded nav items */
+    font-weight: 600;
+    transition: all 0.2s ease;
+    gap: 1rem;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+.nav-link.active {
+    background-color: rgba(0, 96, 100, 0.08);
+    color: var(--primary);
+}
+
+.nav-link.active .nav-icon {
+    color: var(--primary);
+}
+
+.nav-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    /* Circular profiles */
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.15rem;
+    border: 2px solid var(--primary-dark);
+    /* Teal border on circular profile */
+}
+
+.medical-avatar {
+    background-color: var(--success);
+    border-color: #00a143;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.btn-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: white;
+    border: 1.5px solid var(--border-color);
+    color: var(--danger);
+    border-radius: var(--radius-pill);
+    /* Pill logout button */
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.btn-logout:hover {
+    background-color: rgba(229, 57, 53, 0.06);
+    border-color: var(--danger);
+}
+
+/* Topbar */
+.topbar {
+    height: 70px;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    color: var(--text-main);
+}
+
+.topbar-title h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.current-date {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .sidebar {
+        position: fixed;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}

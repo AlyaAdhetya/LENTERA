@@ -1,0 +1,170 @@
+/* ============================================
+   ADMIN PAGES - Medic 128 Style
+   ============================================ */
+
+.admin-page {
+    padding: 1rem 0;
+}
+
+/* ========== STATS GRID ========== */
+.grid-layout-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    padding: 1.75rem;
+    gap: 1.5rem;
+    border-radius: var(--radius-xl);
+    /* Extra rounded stat cards */
+    border: none;
+}
+
+.stat-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    /* Filled icon box, rounded-lg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    color: var(--text-main);
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* ========== CHARTS ========== */
+.chart-title {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.chart-container {
+    height: 300px;
+    width: 100%;
+}
+
+/* ========== UTILITY ========== */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.max-w-\[120px\] {
+    max-width: 120px;
+}
+
+.max-w-\[200px\] {
+    max-width: 200px;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.mt-0\.5 {
+    margin-top: 0.125rem;
+}
+
+.bg-blue-50 {
+    background-color: #eff6ff;
+}
+
+.text-blue-700 {
+    color: #1d4ed8;
+}
+
+/* ========== ADMIN TABLE OVERRIDES ========== */
+.admin-page .table td {
+    padding: 1rem;
+}
+
+.admin-page .table th {
+    padding: 1rem;
+}
+
+.align-middle td {
+    vertical-align: middle;
+}
+
+/* ========== MASTER DATA TABS ========== */
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.border-transparent {
+    border-color: transparent;
+}
+
+.text-text-main {
+    color: var(--text-main);
+}
+
+.rounded-lg {
+    border-radius: var(--radius-md);
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+/* ========== ATTENDANCE STATUS COLORS ========== */
+.text-success {
+    color: var(--success) !important;
+}
+
+.text-warning {
+    color: var(--warning) !important;
+}
+
+.text-danger {
+    color: var(--danger) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}

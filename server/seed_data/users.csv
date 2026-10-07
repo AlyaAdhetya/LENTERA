@@ -1,0 +1,5 @@
+id,username,password,nama_lengkap,role,poli_id
+1,"admin","$2a$10$DCHwTShscbOkfibW2tsBreHbXPe0PYIoXUBGd2rVsE/bT5uPs0gNq","Administrator","admin",
+2,"dr.sari","$2a$10$u4i1Rhta/iwTRbLSPOMDW.IVZwnHTQujO6W.M1Y/0GQEOORzSZKLu","dr. Sari Dewi","dokter",1
+3,"dr.andi","$2a$10$u4i1Rhta/iwTRbLSPOMDW.IVZwnHTQujO6W.M1Y/0GQEOORzSZKLu","drg. Andi Pratama","dokter",2
+4,"dr.ratna","$2a$10$u4i1Rhta/iwTRbLSPOMDW.IVZwnHTQujO6W.M1Y/0GQEOORzSZKLu","dr. Ratna Sari","dokter",3

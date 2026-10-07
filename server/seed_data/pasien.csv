@@ -1,0 +1,6 @@
+id,nik,nrm,nama_lengkap,tempat_lahir,tanggal_lahir,jenis_kelamin,alamat,no_hp,alergi
+1,"3201010101900001","RM-0001","Budi Santoso","Jakarta","1990-01-01","L","Jl. Merdeka No. 1","081111111111","Amoxicillin"
+2,"3201010101850002","RM-0002","Siti Aminah","Bandung","1985-05-15","P","Jl. Pahlawan No. 5","081222222222",
+3,"3201010101950003","RM-0003","Ahmad Fauzi","Surabaya","1995-08-20","L","Jl. Sudirman No. 10","081333333333","Sulfa"
+4,"3201010101780004","RM-0004","Dewi Lestari","Yogyakarta","1978-12-03","P","Jl. Malioboro No. 22","081444444444",
+5,"3201010102000005","RM-0005","Rizky Ramadhan","Semarang","2000-03-17","L","Jl. Pemuda No. 8","081555555555","Penisilin"
