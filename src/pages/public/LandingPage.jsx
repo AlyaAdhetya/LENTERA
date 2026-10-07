@@ -72,7 +72,25 @@ const LandingPage = () => {
                 const response = await api.get('/poli');
                 setPolis(response.data.filter(p => p.is_active));
             } catch (error) {
-                console.error('Error fetching polis:', error);
+                console.error('Error fetching polis dari API (Backend mungkin mati). Menggunakan data fallback:', error);
+                // Fallback menggunakan data layananDetail yang sudah ada di atas
+                const fallbackData = layananDetail.map((item, index) => {
+                    let iconName = 'activity';
+                    if (item.nama.toLowerCase().includes('kia') || item.nama.toLowerCase().includes('mtbs')) iconName = 'baby';
+                    if (item.nama.toLowerCase().includes('lansia')) iconName = 'users';
+                    
+                    const jamParts = item.jam.split('–');
+                    return {
+                        id: index + 1,
+                        nama_poli: item.nama,
+                        deskripsi: item.deskripsi,
+                        jam_buka: jamParts[0]?.trim() || '08:00',
+                        jam_tutup: jamParts[1]?.trim() || '14:00',
+                        kuota_harian: parseInt(item.kuota) || 20,
+                        icon: iconName
+                    };
+                });
+                setPolis(fallbackData);
             } finally {
                 setLoading(false);
             }
